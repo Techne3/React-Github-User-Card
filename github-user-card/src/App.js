@@ -19,7 +19,7 @@ class App extends React.Component {
  
   componentDidMount(){
     axios.get("https://api.github.com/users/techne3/followers")
-    .then(res => res.data.forEach(user => {
+    .then(res => res.data.map(user => {
       axios.get(user.url)
     .then(res => this.setState({
         user: [...this.state.user, res.data]
@@ -30,7 +30,7 @@ class App extends React.Component {
 
       axios.get("https://api.github.com/users/techne3")
       .then(res => this.setState({ 
-      user: [...this.state.user,  res.data]
+      user: [res.data]
   }))
     .catch(err => console.log("Errors", err))
 }

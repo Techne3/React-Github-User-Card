@@ -8,11 +8,11 @@ import {
 class UserItem extends React.Component {
     render(props){
         return(
-            <div>
+            <div className="container">
                  <Card className="cardWrap">
-                    <CardImg top width="50%" src={this.props.user.avatar_url} alt="Card image cap" />
+                    <CardImg top width="100%" src={this.props.user.avatar_url} alt="Card image cap" />
                 <CardBody className="cards">
-                    <CardTitle>{this.props.user.name}</CardTitle>
+                    <CardTitle className="cardTitle">{this.props.user.name}</CardTitle>
                     <p> <a href={this.props.user.html_url}>{this.props.user.html_url}</a></p>
                     <p>{this.props.user.location}</p>
                  </CardBody>

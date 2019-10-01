@@ -24,6 +24,20 @@
   margin-top:2%;
 }
 .cardWrap{
+  
   border:1px solid grey;
-  /* width: 50%; */
+  width: 30%;
+  margin-top: 20px;
+  box-shadow: 0px 9px 15px 1px rgb(79, 78, 78);
+  color:#fff;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+}
+
+.cardTitle{
+  font-size: 3rem;
 }
